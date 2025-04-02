@@ -130,8 +130,11 @@ input, button, select {
 }
 
 #product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 250px;
-  height: 350px;
+  height: 380px;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid black;
@@ -140,15 +143,24 @@ input, button, select {
 }
 
 #product-image {
-  height: 160px;
+  height: 150px;
   margin-bottom: 20px;
   object-fit: contain;
 }
 
 #product-info {
-  height: 120px;
+  height: 170px;
   background-color: white;
   text-align: left;
+}
+
+.product-description {
+  overflow: auto;
+  height: 2.2rem;
+}
+
+.product-title {
+  height: 65px;
 }
 
 .in-stock {
@@ -158,6 +170,7 @@ input, button, select {
 .almost-sold-out {
   color: orange;
 }
+
 .not-in-stock {
   color: red;
 }

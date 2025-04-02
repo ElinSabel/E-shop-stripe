@@ -19,10 +19,10 @@ export const DisplayProducts = ({ p }: IDisplayProductsProps) => {
         <article id="product-card">
           <img id="product-image" src={p.image} />
           <div id="product-info">
-            <h2>{p.name}</h2>
-            <p>{p.description}</p>
+            <h3 className="product-title">{p.name}</h3>
+            <p className="product-description"><i>{p.description}</i></p>
             <br />
-            <h3>{p.price} $</h3>
+            <h3 className="product-price">{p.price} $</h3>
             {p.stock < 0 ? (
               <h4 className="not-in-stock">Out of Stock</h4>
             ) : p.stock < 2 ? (

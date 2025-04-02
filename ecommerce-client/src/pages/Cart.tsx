@@ -61,6 +61,7 @@ export const Cart = () => {
       setCustomerEmail(customer.email)
       setOrderId(newOrder?.id)
       setCheckoutModePay(true);
+      console.log(newOrder)
     } catch (error) {
       console.error("Error processing checkout:", error);
     }
